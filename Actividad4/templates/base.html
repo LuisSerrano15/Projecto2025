@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Mi Aplicación{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Mi Aplicación Flask</h1>
+        <nav>
+            <a href="/">Inicio</a> |
+            <a href="/usuarios">Usuarios</a> |
+            <a href="/productos">Productos</a>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <hr>
+        <p>&copy; 2025 - Proyecto Capstone</p>
+    </footer>
+</body>
+</html>
